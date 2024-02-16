@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <script type="module">
+      import init, { hello } from '../pkg/wasm1.js';
+
+      async function run() {
+        await init();
+        
+        hello("test");
+      }
+
+      run();
+    </script>
+</head>
+<body>
+    Hello!
+</body>
+</html>
